@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 LABEL Maintainer="bpicode"
 
-ARG go_version=1.9.3
+ARG go_version=1.9.4
 
 RUN apt-get update && apt-get install --no-install-recommends -y make wget git dpkg-sig curl zip ruby ruby-dev rubygems build-essential gcc rpm && rm -rf /var/lib/apt/lists/*
 
