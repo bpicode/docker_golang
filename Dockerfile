@@ -10,4 +10,4 @@ ENV GOPATH=/root/go
 ENV GOROOT=/usr/local/go
 ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
-RUN gem install --no-ri --no-rdoc fpm
+RUN gem install --no-ri --no-rdoc fpm -v 1.9.3
