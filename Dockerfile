@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 LABEL Maintainer="bpicode"
 
-ARG go_version=1.9.4
+ARG go_version=1.10
 ARG fpm_version=1.9.3
 
 RUN apt-get update && apt-get install --no-install-recommends -y make wget git dpkg-sig curl zip ruby ruby-dev rubygems autoconf automake libtool libltdl-dev build-essential gcc rpm && rm -rf /var/lib/apt/lists/*
