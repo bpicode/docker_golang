@@ -12,3 +12,5 @@ ENV GOROOT=/usr/local/go
 ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 RUN gem install --no-ri --no-rdoc fpm -v ${fpm_version}
+
+RUN wget -qO- https://jfrog.bintray.com/jfrog-cli-go/1.14.0/jfrog-cli-linux-amd64/jfrog -O /usr/local/bin/jfrog && chmod 755 /usr/local/bin/jfrog
