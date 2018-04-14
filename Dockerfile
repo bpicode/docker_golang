@@ -15,6 +15,6 @@ ENV PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 RUN gem install --no-ri --no-rdoc fpm -v ${fpm_version}
 
-RUN wget -qO- https://jfrog.bintray.com/jfrog-cli-go/${frogcli_version}/jfrog-cli-linux-amd64/jfrog -O /usr/local/bin/jfrog && chmod 755 /usr/local/bin/jfrog
+RUN wget -qO- https://jfrog.bintray.com/jfrog-cli-go/${jfrogcli_version}/jfrog-cli-linux-amd64/jfrog -O /usr/local/bin/jfrog && chmod 755 /usr/local/bin/jfrog
 
 RUN wget -q https://github.com/github/hub/releases/download/v${githubcli_version}/hub-linux-amd64-${githubcli_version}.tgz -O - | tar xvz -C /tmp/  && /tmp/hub-linux-amd64-${githubcli_version}/./install && rm -rf /tmp/hub-linux-amd64-${githubcli_version}/
