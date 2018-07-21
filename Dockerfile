@@ -1,10 +1,10 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 LABEL Maintainer="bpicode"
 
 ARG go_version=1.10.3
-ARG fpm_version=1.10.0
-ARG jfrogcli_version=1.16.1
-ARG githubcli_version=2.4.0
+ARG fpm_version=1.10.2
+ARG jfrogcli_version=1.17.1
+ARG githubcli_version=2.5.0
 
 RUN apt-get update && apt-get install --no-install-recommends -y make wget git dpkg-sig curl zip ruby ruby-dev rubygems autoconf automake libtool libltdl-dev build-essential gcc rpm && rm -rf /var/lib/apt/lists/*
 
