@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 LABEL Maintainer="bpicode"
 
-ARG go_version=1.11.2
+ARG go_version=1.11.4
 ARG fpm_version=1.10.2
 ARG jfrogcli_version=1.17.1
 ARG githubcli_version=2.5.0
